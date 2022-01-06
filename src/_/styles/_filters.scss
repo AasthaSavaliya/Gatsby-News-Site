@@ -1,0 +1,16 @@
+//%textGradientClip { doesnt work
+//  -webkit-background-clip: text;
+//  -webkit-text-fill-color: transparent;
+//}
+
+%blurBackground{
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+%blurForeground{
+  filter: blur(0.25rem);
+}
+
+.blur {
+  @extend %blurForeground;
+}

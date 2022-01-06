@@ -1,0 +1,102 @@
+@import "bootstrap";
+@import "filters";
+@import "colours";
+@import "transitions";
+@import "animate.min.css";
+//App styles
+
+::selection {
+  background-color: cornsilk;
+  color: #30CFD0;
+}
+
+body {
+  cursor: default;
+  overflow-x: hidden;
+}
+
+main {
+  transition: filter 0.5s ease-in-out;
+}
+
+.hand {
+  cursor: pointer;
+}
+
+.help {
+  cursor: help;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+  left: auto;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.l1 {
+  line-height: 1 !important;
+}
+
+.z3 {
+  z-index: 3;
+}
+
+.progressBarRoot {
+  height: 1px;
+}
+
+.progressBar {
+  //background: linear-gradient(-45deg, rgba(0, 255, 207, 1) 0%, rgba(0, 255, 254, 1) 25%, rgba(180, 0, 241, 1) 100%);
+  transition: clip 1s ease-in-out;
+  margin-top: -1px;
+}
+
+//.bg-darkGradient2 {
+//  background: linear-gradient(180deg, #000000 0%, #333 100%);
+//}
+
+.notificationBadge {
+  width: 30px;
+  height: 30px;
+  line-height: 1.75;
+  top: 15px;
+  right: 25px;
+}
+
+.addNewBtn:hover, .addNewBtn:focus {
+  //background: linear-gradient(135deg, #30CFD0 0%, rgba(0, 255, 207, 1) 100%) !important;
+}
+
+#notificationPanel {
+  right: -25%;
+  width: 25%;
+  min-width: 360px;
+}
+
+#notificationPanel.isVisible {
+  right: 0;
+}
+
+#dashboard {
+  left: -100vw;
+  //width: 50%;
+}
+
+#dashboard.isVisible {
+  left: 0;
+}
+
+@media (min-width: 1200px) {
+
+}

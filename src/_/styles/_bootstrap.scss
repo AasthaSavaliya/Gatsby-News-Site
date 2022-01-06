@@ -1,0 +1,41 @@
+@import "colours";
+
+/* bootstrap var overrides */
+$border-radius: 1rem;
+$border-radius-sm: 0.75rem;
+$border-radius-lg: 2rem;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1800px
+);
+
+@import "~bootstrap";
+//@todo include selective bootstrap components only
+
+/* bootstrap comp overrides */
+//@todo edit bootstrap components scss instead of overriding here
+.modal-content {
+  border: none;
+  box-shadow: 0 10px 75px rgba(0, 0, 0, 0.35);
+}
+
+.modal-backdrop {
+  //transition: all 0.5s ease-in-out !important;
+}
+
+.modal-backdrop.show {
+  opacity: 1 !important;
+  backdrop-filter: saturate(180%) blur(10px);
+  //background-color: rgba(255,255,255,0.25);
+  @extend %defaultGradient2;
+  //-webkit-background-clip: text;
+  //-webkit-text-fill-color: transparent;
+
+  //opacity: 0.75 !important;
+  //background-color: whitesmoke;
+  //background: linear-gradient(45deg, rgba(0, 255, 207, 1) 0%, rgba(0, 255, 254, 1) 25%, rgba(180, 0, 241, 1) 100%);
+}
